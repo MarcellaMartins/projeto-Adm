@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Marcella Martins">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+
+      <title>ADM</title>
+      <link rel="stylesheet" type="text/css" href="css/estilo.css">
+      <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script> -->
+      <script type="text/JavaScript" src="js/script.js"></script>
+  </head>
+  <body>
+    <form id="formulario" action="index.html">
+      <fieldset id="central">
+        <legend> Formulário </legend>
+        <input type="text" id="acao" value="cadastrar" hidden>
+        <input type="text" id="codigo" hidden>
+        <div class="esquerda">
+          <fieldset class="grupos">
+            <legend id="processador">Processador</legend>
+            <label for="fMarcaP">Marca:</label><input type="text" id="fMarcaP" placeholder="Escreva aqui..."><br>
+            <label for="fVelocidadeP">Velocidade:</label><input type="text" id="fVelocidadeP" placeholder="Escreva aqui...">
+          </fieldset>
+          <fieldset class="grupos">
+            <legend id="placaMae">Placa-Mãe</legend>
+            <label for="fMarcaPM">Marca:</label><input type="text" id="fMarcaPM" placeholder="Escreva aqui..."><br>
+            <label for="fModeloPM">Modelo:</label><input type="text" id="fModeloPM" placeholder="Escreva aqui...">
+          </fieldset>
+        </div>
+        <div class="direita">
+          <fieldset class="grupos">
+            <legend id="ram">Memória Ram</legend>
+            <label for="fQuantidadeRam">Quantidade:</label><input type="text" id="fQuantidadeRam" placeholder="Escreva aqui..."><br>
+            <label for="fCapacidadeRam">Capacidade:</label><input type="text" id="fCapacidadeRam" placeholder="Escreva aqui...">
+          </fieldset>
+          <fieldset class="grupos">
+            <legend id="hd">HD's</legend>
+            <label for="fQuantidadeHd">Quantidade:</label><input type="text" id="fQuantidadeHd" placeholder="Escreva aqui..."><br>
+            <label for="fCapacidadeHd">Capacidade:</label><input type="text" id="fCapacidadeHd" placeholder="Escreva aqui...">
+          </fieldset>
+        </div>
+        <div class="esquerda">
+          <fieldset class="grupos">
+            <legend id="fonteEnergia">Fonte de Energia</legend>
+            <label for="fMarcaFE">Marca:</label><input type="text" id="fMarcaFE" placeholder="Escreva aqui..."><br>
+            <label for="fModeloFE">Modelo:</label><input type="text" id="fModeloFE" placeholder="Escreva aqui...">
+          </fieldset>
+        </div>
+          <input type="button" id="registrar" name="registrar" class="botao btn" value="Registrar" onclick="botao()">
+          <input type="reset" id="cancelar" name="cancelar" class="botao btn" value="Cancelar">
+      </fieldset>
+    </form>
+    
+    <div id="conteudo">
+      <h4>Lista de Computadores</h4>
+        <form id="busca" action="index.html">
+          <label for="busca">Busca: </label> <input type="text" id="fBusca" onkeyup="busca()" class="btn" placeholder="Digite pelo codigo">
+        </form>
+    </div>
+    <table id="tabelaGeral">
+      <tr id="linhaPrincipal">
+          <td>N°</td> <!-- Númeo do produto -->
+          <td colspan="2">Processador</td> <!-- Velocidade e marca -->
+          <td colspan="2">Placa-mãe</td> <!-- Modelo e marca -->
+          <td colspan="2">Memória RAM</td> <!-- quantidade e capacidade -->
+          <td colspan="2">HD's</td> <!-- quantidade e capacidade -->
+          <td colspan="2">Fonte de Energia</td> <!-- modelo e marca -->
+          <td colspan="2">Opções</td> <!-- Alterar & Apagar -->
+        </tr>
+    </table>
+    <div id="rodape">
+      <!-- Contatos e páginas -->
+    </div>
+  </body>
+</html>

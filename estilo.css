@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times new rowan', Verdana, Arial;
+}
+#navegacao{
+    width: 100%;
+    height: 50px;
+}
+
+#corpo, #rodape{
+    width: 100%;
+}
+
+.btn {
+    background-color: whitesmoke;
+    padding: 5px;
+    color: black;
+    font-size: 16px;
+    border: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formulario{
+    width: 750px;
+    color: black;
+    padding: 5px 5px;
+    margin: 10px auto;
+}
+
+.grupos{
+    width: 300px;
+    height: 70px;
+    margin: 3px 10px;
+    padding: 5px 10px;
+}
+
+.esquerda{
+    float: left;
+}
+
+.direita{
+    float: right;
+}
+
+#central, #msg{
+    padding: 5px;
+    text-align: center;
+}
+
+.botao{
+    width: 95%;
+    padding: 5px;
+    margin: 5px 10px;
+}
+
+.btn:hover{
+    background-color: lightgray;
+}
+
+#conteudo{
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Tabela */
+#tabelaGeral{
+    width: 100%;
+    text-align: center;
+}
+
+#tabelaGeral, tr, td{
+    border: black solid 1px;
+    font-size: 16px;
+}
